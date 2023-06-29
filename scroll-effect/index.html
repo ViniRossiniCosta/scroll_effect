@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Scroll effect</title>
+  </head>
+  <body>
+    <section class="part-1">
+      <div class="container">
+        <h2 class="principalTitulo">Scroll effects</h2>
+        <div class="content">
+          <div class="images">
+            <img
+              src="assest/are_ai_art_engines_ripping_off_artists.jpg"
+              alt=""
+            />
+          </div>
+          <div class="text-box">
+            <h3>Lorem ipsum</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              hendrerit ante neque, eu hendrerit massa interdum et. Orci varius
+              natoque penatibus et magnis dis parturient montes, nascetur
+              ridiculus mus. Sed suscipit risus ac mi dignissim, eget ultricies
+              mi vestibulum. Etiam quis ante ante. Vestibulum tincidunt
+              hendrerit vehicula. Phasellus non ante blandit, auctor nulla a,
+              rhoncus erat. Praesent feugiat vulputate felis eu vehicula. Cras
+              sed pellentesque eros. In lobortis, felis quis venenatis posuere,
+              risus elit pellentesque erat, sed egestas augue augue molestie
+              tellus. Praesent vel iaculis ipsum. In hac habitasse platea
+              dictumst.
+            </p>
+          </div>
+        </div>
+        <div class="media-icons">
+          <a href="" class="icon"><i class="fab fa-facebook"></i></a>
+          <a href="" class="icon"><i class="fab fa-instagram"></i></a>
+          <a href="" class="icon"><i class="fab fa-twitter"></i></a>
+          <a href="" class="icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </section>
+    <section class="part-2">
+      <div class="container">
+        <h3 class="titulo-secao">Lorem ipsum</h3>
+        <div class="content">
+          <div class="images">
+            <img
+              src="assest/merlin_212276709_3104aef5-3dc4-4288-bb44-9e5624db0b37-superJumbo.jpg"
+              alt=""
+            />
+          </div>
+          <div class="info">
+            <h4 class="titulo-info">Descricao</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              hendrerit ante neque, eu hendrerit massa interdum et. Orci varius
+              natoque penatibus et magnis dis parturient montes, nascetur
+              ridiculus mus. Sed suscipit risus ac mi dignissim, eget ultricies
+              mi vestibulum. Etiam quis ante ante. Vestibulum tincidunt
+              hendrerit vehicula. Phasellus non ante blandit, auctor nulla a,
+              rhoncus erat. Praesent feugiat vulputate felis eu vehicula. Cras
+              sed pellentesque eros. In lobortis, felis quis venenatis posuere,
+              risus elit pellentesque erat, sed egestas augue augue molestie
+              tellus. Praesent vel iaculis ipsum. In hac habitasse platea
+              dictumst.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="part-3">
+      <div class="container">
+        <h3 class="titulo-secao">Lorem ipsum</h3>
+        <div class="content">
+          <div class="media-info">
+            <li><a href=""><i class="fab fa-facebook"> Facebook</i></a></li>
+            <li><a href=""><i class="fab fa-instagram"> Instagram</i></a></li>
+            <li><a href=""><i class="fab fa-twitter"> Twitter</i></a></li>
+            <li><a href=""><i class="fab fa-youtube"> Youtube</i></a></li>
+          </div>
+          <div class="images">
+            <img src="assest/whimmy-cyberpunkgirl-ai-art-example-feature-image-v2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      ScrollReveal({ 
+        reset: true,
+        distance:  '60px',
+        duration: 2500,
+        delay: 400
+      });
+
+      ScrollReveal().reveal('.principalTitulo, .titulo-secao', { delay: 600, origin: 'left'});
+      ScrollReveal().reveal('.part-1 .images, .info', { delay: 599, origin: 'bottom'});
+      ScrollReveal().reveal('.text-box', { delay: 690, origin: 'right'});
+      ScrollReveal().reveal('.media-icons i', { delay: 700, origin: 'bottom', interval: 180});
+      ScrollReveal().reveal('.part-2 .images', { delay: 400, origin: 'top'});
+      ScrollReveal().reveal('.media-info li', { delay: 490, origin: 'right', interval: 400});
+    </script>
+
+  </body>
+</html>
